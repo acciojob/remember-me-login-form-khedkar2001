@@ -11,14 +11,20 @@
 <body>
   <h1>Login Form</h1>
   <form id="loginForm">
-    <input type="text" placeholder="Username" id="username" required /><br />
-    <input type="password" placeholder="Password" id="password" required /><br />
-    <label>
-      <input type="checkbox" id="checkbox" />
-      Remember me.
-    </label><br />
-    <input type="submit" value="Submit" id="submit" />
-  </form>
+  <label for="username">Username:</label>
+  <input type="text" placeholder="Username" id="username" required /><br />
+
+  <label for="password">Password:</label>
+  <input type="password" placeholder="Password" id="password" required /><br />
+
+  <label for="checkbox">
+    Remember me:
+    <input type="checkbox" id="checkbox" />
+  </label><br />
+
+  <input type="submit" value="Submit" id="submit" />
+</form>
+
 
   <button id="existing" style="display: none;">Login as existing user</button>
 
